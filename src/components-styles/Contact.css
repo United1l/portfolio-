@@ -1,0 +1,45 @@
+.socials-wrapper {
+	padding: 1rem;
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.socials-wrapper h4 {
+	flex: 1;
+}
+
+.icons-wrapper {
+	flex: 2;
+	display: flex;
+	list-style: none;
+}
+
+.icons-wrapper li {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 15px;
+	padding: 1rem;
+	margin: 0 0.7rem;
+	background-color: hsl(43, 82%, 89%);
+	cursor: pointer;
+}
+
+.icons-wrapper li:hover {
+	background-color: hsl(19, 90%, 60%);
+}
+#instagram {
+	height: 40px;
+	width: 40px;
+}
+
+
+@media only screen and (min-width: 550px) {
+	.socials-wrapper {
+		max-width: 30%;
+	}
+}
