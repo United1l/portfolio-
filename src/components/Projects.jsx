@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import '../components-styles/Projects.css';
 import slapomania from '../assets/in-game.png';
-import start from '../assets/start.png';
+import lobby from '../assets/the-lobby.png';
 import { withErrorBoundary } from './withErrorBoundary.jsx';
 
 let	tracker = 1;
@@ -25,7 +25,8 @@ const Projects = () => {
 	const [xPos, setXpos] = useState(0);
 	let style = {transform: `translateX(${xPos}%)`};
 
-	const ownProjects = [{img: slapomania, alt: 'A javaScript game', name: 'Slapomania', href: 'https://slapomania.vercel.app'}, {img: start, alt: 'start game', name: 'Grand fisher', href: 'https://slapomania.vercel.app'},];
+	const ownProjects = [{img: slapomania, alt: 'A javaScript game', name: 'Slapomania', href: 'https://slapomania.vercel.app'}, 
+		{img: lobby, alt: 'the lobby', name: 'The Lobby', href: 'https://the-lobby.vercel.app'},];
 
 	let atLast = ownProjects.length/tracker == 1;	
 
