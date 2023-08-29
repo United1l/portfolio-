@@ -25,6 +25,9 @@ const withErrorBoundary = (WrappedComponent) => {
 
 		if (hasError) {
 			console.log(errorInfo)
+			return <h4 style={{color: 'red'}}>Oops seems like something went wrong. <br /> 
+						Refresh after a few minutes
+					</h4>;
 		}
 
 		return <WrappedComponent {...props} />;
